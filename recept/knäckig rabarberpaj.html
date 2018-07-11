@@ -1,0 +1,122 @@
+  <!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="icon" type="image/png" href="../bilder/recept.png">
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="../css/style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103013369-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+     <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+  // Initialize Firebase
+
+var receptnamn = "knäckig rabarberpaj";
+</script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="../js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Knäckig rabarberpaj</title>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Orbitron" rel="stylesheet">
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app">
+        <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Recept</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="../menyval1.html">Recept</a></li>
+                    <li><a href="../menyval2.html">Minafavoritrecept</a></li>
+                    <li><a href="../menyval3.html">Om mig</a></li>
+                </ul>
+            </div>
+        </nav>
+
+ <div Class="col-sm-2">
+    <h5>knäckig rabarberpaj</h5>
+        <img src="../bilder/knakig rabarberpaj.jpg" width="100%">
+    </div>
+
+    
+    <div class="col-sm-2">
+        <h5>ingredienser</h5>
+        <ul>
+        <li>sak</li>
+        <li>500 g rabarber</li>
+        <li>2 dl havregryn </li>
+        <li>2 dl socker</li>
+        <li>1 3/4 dl vetemjöl</li>
+        <li>1/2 tsk bakpulver </li>
+        <li>1 krm vaniljsocker</li>
+        <li>125 g smör</li>
+        <li>1/2 dl vispgrädde</li>
+        <li>1/2 dl ljus sirap</li>
+        <li>smör till formen</li>
+        </ul>
+    </div>
+
+    <h5>så här gör du</h5>
+    <div class="col-sm-8">
+    <ol>
+        <li>Sätt ugnen på 150°C. </li>
+        <li>
+Blanda alla torra ingredienser i en bunke.</li>
+        <li>Smält smöret i en kastrull tillsammans med grädde och sirap. Blanda ner de torra ingredienserna.</li>
+        <li>Ansa och skär rabarbern i ca 4 cm stora bitar. Lägg dem i en smord ugnssäker form. Bred på smeten.</li>
+        <li>
+Grädda pajen mitt i ugnen 40–50 minuter, tills den fått fin färg.</li>
+        <li>Till servering: Servera gärna ljummen med vaniljglass.</li>
+    </ol>
+    </div>
+<div class="kommentarer" ng-controller="KommentarCtrl" >
+
+    <form ng-submit="addComment()">
+        <div class="form-group">
+            <input placeholder="Ditt namn" type="text" class="form-control" ng-model="kommentar.skribent">
+        </div>
+        <div class="form-group">
+            <input placeholder="Din kommentar" type="text" class="form-control" ng-model="kommentar.text">
+        </div>
+        <button type="submit" class="btn btn-primary">Kommentera</button>
+    </form>
+     <div class="kommentar" ng-repeat="kommentar in kommentarer">
+        <p><h3>{{ kommentar.skribent }}</h3> {{ kommentar.text }}</p>
+    </div>
+</div>
+    </body>
+</html>

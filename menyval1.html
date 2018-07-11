@@ -1,0 +1,149 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+<!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="bilder/recept.png">
+<!-- Koppla in Bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+<link rel="stylesheet" type ="text/css" href="css/style.css">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-103013369-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- Koppla in och JQuery Bootstrap javascript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+<script type="text/javascript" src="js/funktion.js"></script>
+
+<!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+<title>Mina recept</title>
+<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette|Orbitron" rel="stylesheet">
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+<nav class="nav navbar-inverse navbar-static-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">Recept</a>
+<ul class="nav navbar-nav">
+<li><a href="menyval1.html">Recept</a></li>
+<li><a href="menyval2.html">Minafavoritrecept</a></li>
+<li><a href="menyval3.html">om mig</a></li>
+</ul>
+</div>
+</nav>
+<div class="receptnamn">
+<h2> Här ser ni alla mina recept! </h2>
+<div class="container">
+<div class="row">
+
+<div Class="col-sm-3">
+<h2><a href="recept/kladdkaka.html"> kladdkaka </a></h2>
+
+<img src="bilder/kladdkaka.jpeg" class="receptbild" width="100%">
+</div>
+
+
+<div class="col-sm-9"	>
+<h3>detta är ett av mina favorit recept det går snabbt att göra och är enkelt.</h3>
+</div>
+</div>
+<hr class="line">
+<div class="row">
+
+
+<div class="col-sm-3">
+<h2><a href="recept/korvstroganoff.html"> korv stroganoff</a></h2>
+<img src="bilder/korvstroganoff.jpg" class="receptbild" width="100%">
+</div>
+
+<div class="col-sm-9">
+
+<h3>Detta är mitt andra favorit recept det är också enkelt om man dubblar portionerna så kan man frysa in och äta till matlåda eller om man inte har eller om man inte orkar göra mat hemma.</h3>
+
+</div>
+</div>
+
+<div class="row">
+<hr class="line">
+
+<div class="col-sm-3">
+<h2><a href="recept/chokladbollar.html">chokladbollar</a></h2>
+<img src="bilder/chokladbollar.jpeg" class="receptbild" width="100%">
+</div>
+
+<div class="col-sm-9">
+
+<h3> Detta receptet är också väldigt lätt det är bara att blanda men det som tar tid är när dem ska stelna. man kan byta ut havregryn mot rågflingor. </h3>
+
+</div>
+</div>
+
+
+<div class="row">
+<hr class="line">
+
+<div class="col-sm-3">
+<h2><a href="recept/kottfarssas-och-spaggeti.html">köttfärssås och spagetti</a></h2>
+<img src="bilder/food.jpg" class="receptbild" width="100%">
+</div>
+
+<div class="col-sm-9">
+<h3> Detta receptet är gott och enkelt.</h3>
+</div>
+</div>
+<hr class="line">
+<div class="row">
+
+
+<div Class="col-sm-3">
+<h2><a href="recept/knäckig rabarberpaj.html"> knäckig rabarberpaj </a></h2>
+<img src="bilder/knakig rabarberpaj.jpg" class="receptbild" width="100%">
+</div>
+
+<div class="col-sm-9">
+<h3> Detta recept är gott och enkelt. .</h3>
+</div>
+</div>
+<hr class="line">
+<div class="row">
+
+
+<div Class="col-sm-3">
+<h2><a href="recept/Pannkakor.html"> Pannkakor </a></h2>
+<img src="bilder/nopicture.jpg" class="receptbild" width="100%">
+</div>
+
+<div class="col-sm-9">
+<h3>Detta recept är gott och enkelt det går även snabbt att laga om man har lite brottom.</h3>
+</div>
+</div>
+<hr class="line">
+<div class="row">
+
+
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

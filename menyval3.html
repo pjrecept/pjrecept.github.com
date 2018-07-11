@@ -1,0 +1,74 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="icon" type="image/png" href="bilder/recept.png">
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103013369-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Mina recept</title>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+    <nav class="nav navbar-inverse navbar-static-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Recept</a>
+            <ul>
+                <li><a href="menyval1.html">Recept</a></li>
+                <li><a href="menyval2.html">Mina favorit recept</a></li>
+                <li><a href="menyval3.html">om mig</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <h1> Här finns lite fakta om mig som har gjort denna hemsida.</h1>
+
+      <img src="bilder/smily.jpeg" id="smily">
+
+    <div class="whitebox">
+        <h4> Hej kul att just du har hittat till min hemsida här står lite fakta om vem jag är och vad jag tycker om att göra. </h4>
+            <h4>Jag heter Pontus jag bor i skåne och jag gillar att laga mat och baka. Jag är 15 år och förutom att laga mat gillar jag att simma och programmera.</h4> 
+    </div>
+
+  <div class="kontakt">
+       <h4> Kontakta mig om det blir något fel eller om du har några frågor.</h4>
+            <h4></h4> 
+             <h4> Om ni vill komma i kontakt med mig så är min mailadress:pontussim@gmail.com </h4>
+        </div>
+
+</body>
+    </html>
+
+
